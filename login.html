@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login form</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+  <body>
+    <form class="border border-dark w-50 p-3" action="#!">
+      <p class="h4 mb-4">Sign in</p>
+
+      <!-- Email -->
+      <div class="d-flex justify-content-between">
+        <label>Your Email</label
+        ><button class="btn btn-primary btn-sm 2 mb-1" type="submit">
+          Sign in
+        </button>
+      </div>
+      <input
+        type="email"
+        id="defaultLoginFormEmail"
+        class="form-control mb-4"
+        placeholder="Email"
+      />
+
+      <!-- Password -->
+      <div class="d-flex justify-content-between">
+        <label>Your Password</label>
+        <a href="">Forgot password</a>
+      </div>
+
+      <input
+        type="password"
+        id="defaultLoginFormPassword"
+        class="form-control mb-4"
+        placeholder="Password"
+      />
+
+      <!-- Remember me -->
+      <div class="custom-control custom-checkbox">
+        <input
+          type="checkbox"
+          class="custom-control-input"
+          id="defaultLoginFormRemember"
+        />
+        <label class="custom-control-label" for="defaultLoginFormRemember"
+          >Save password</label
+        >
+        <div>
+          <!-- Forgot password -->
+        </div>
+      </div>
+
+      <!-- Sign in button -->
+      <button class="btn btn-primary btn-block my-4" type="submit">
+        Sign in
+      </button>
+    </form>
+  </body>
+</html>
